@@ -2,6 +2,5 @@ langchain_core
 streamlit
 langchain_groq
 langchain
-groq
-logging
 pyyaml
+pypdf
