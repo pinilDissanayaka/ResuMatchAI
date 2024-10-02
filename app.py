@@ -2,10 +2,6 @@ import streamlit as st
 from utils.job_post_handler import get_job_posts
 from utils.resume_handler import get_resume_text
 from utils.llm_handler import compare_resume
-from utils.resume_handler import load_document
-from utils.llm_handler import generate_cover_letter
-
-temp_file_path="temp/"
 
 # App title
 st.set_page_config(page_title="📝 ResuMatchAI 🌐")
