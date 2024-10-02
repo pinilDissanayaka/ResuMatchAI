@@ -5,12 +5,15 @@ import streamlit as st
 
 def get_resume_text(uploaded_file:str)->str:
     try:
-        current_directory = os.getcwd()
-        with TemporaryDirectory(dir=current_directory) as tmp_dir:
-            temp_file_path=os.path.join(tmp_dir, uploaded_file.name)
+        tmp_dir = "temp"
+        
+        if not os.path.exists(tmp_dir):
+            os.makedirs(tmp_dir)
+
+        temp_file_path=os.path.join(tmp_dir, uploaded_file.name)
             
-            with open(temp_file_path, "wb") as resume_file:
-                resume_file.write(uploaded_file.read())
+        with open(temp_file_path, "wb") as resume_file:
+            resume_file.write(uploaded_file.read())
                 
         upload_document_extension=os.path.splitext(uploaded_file.name)[1]
         
@@ -23,6 +26,9 @@ def get_resume_text(uploaded_file:str)->str:
             
         if loader:
             resume_text=loader.load()
+            
+        if os.path.exists(tmp_dir):
+            os.remove(tmp_dir)
 
             return resume_text
         
