@@ -54,7 +54,7 @@ streamlit run app.py
 
 ## 🌐 Hosted Application
 
-You can try out the live version of ResuMatchAI here: ResuMatchAI Live App
+You can try out the live version of ResuMatchAI here: [ResuMatchAI Live App](https://resumatchai.streamlit.app/)
 
 
 ## 🖼️ Screenshots
