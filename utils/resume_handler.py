@@ -7,9 +7,6 @@ def get_resume_text(uploaded_file:str)->str:
     try:
         tmp_dir = "temp"
         
-        if not os.path.exists(tmp_dir):
-            os.makedirs(tmp_dir)
-
         temp_file_path=os.path.join(tmp_dir, uploaded_file.name)
             
         with open(temp_file_path, "wb") as resume_file:
@@ -27,8 +24,8 @@ def get_resume_text(uploaded_file:str)->str:
         if loader:
             resume_text=loader.load()
             
-        if os.path.exists(tmp_dir):
-            os.remove(tmp_dir)
+        if os.path.exists(temp_file_path):
+            os.remove(temp_file_path)
 
             return resume_text
         
