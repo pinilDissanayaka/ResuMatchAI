@@ -23,7 +23,7 @@ job_post_description=st.text_area("Paste the job posting description here (optio
 
 
 if uploaded_resume is not None:
-    if st.button("Generate Cover letter"):
+    if st.button("Compare"):
         with st.spinner("Thinking..."):
             resume_text=get_resume_text(uploaded_file=uploaded_resume)
             
