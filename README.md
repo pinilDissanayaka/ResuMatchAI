@@ -59,10 +59,13 @@ You can try out the live version of ResuMatchAI here: [ResuMatchAI Live App](htt
 
 ## 🖼️ Screenshots
 1. Upload Resume Page
+![Screenshot 2024-10-02 080623](https://github.com/user-attachments/assets/29faa2d3-6e18-4773-ac3d-2d7340b6ee2d)
 
-2. Job Description Input Page
+2. AI Analysis and Suggestions
+![Screenshot 2024-10-02 081650](https://github.com/user-attachments/assets/b93c17a5-7a2b-4d2f-a5ea-c38aecf6edc7)
+![Screenshot 2024-10-02 082411](https://github.com/user-attachments/assets/76f6efe2-ca5e-4cd7-88dc-22d76ee300bb)
+![Screenshot 2024-10-02 082422](https://github.com/user-attachments/assets/3d7564e8-f4bd-4baf-8d28-566ee784a22c)
 
-3. AI Analysis and Suggestions
 
 ## 🤝 Contributing
 We welcome contributions! Feel free to submit a pull request, report issues, or suggest new features.
